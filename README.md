@@ -1,9 +1,8 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
-    <img alt="AI Employees" src="assets/logo-light.png" width="480" height="114">
-  </picture>
-</p>
+<h1 align="center">AI Employees</h1>
+
+<p align="center"><strong>Unofficial fork maintained by Naveen Dadi (Boost Oxygen).</strong><br>
+Based on <a href="https://github.com/markfulton/ai-employees">AI Employees by Mark Fulton</a> (MIT License). Not the official version and not endorsed by Reinventing.AI.</p>
+
 
 <h3 align="center">Eight open source AI Employees. Each one runs a whole business role.</h3>
 <p align="center">60 scheduled routines. Your own machine. The AI agent you already use.</p>
