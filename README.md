@@ -1,7 +1,6 @@
 <h1 align="center">AI Employees</h1>
 
-<p align="center"><strong>Unofficial fork maintained by Naveen Dadi (Boost Oxygen).</strong><br>
-Based on <a href="https://github.com/markfulton/ai-employees">AI Employees by Mark Fulton</a> (MIT License). Not the official version and not endorsed by Reinventing.AI.</p>
+<p align="center"><strong>maintained by Naveen Dadi (Boost Oxygen).</strong><br>
 
 
 <h3 align="center">Eight open source AI Employees. Each one runs a whole business role.</h3>
@@ -20,7 +19,7 @@ Based on <a href="https://github.com/markfulton/ai-employees">AI Employees by Ma
 </p>
 
 <p align="center">
-  <img alt="Stars" src="https://img.shields.io/github/stars/markfulton/ai-employees?style=flat-square&color=E3B341&logo=github&logoColor=white&label=Stars">
+  <img alt="Stars" src="https://img.shields.io/github/stars/dadinaveen/ai-employees?style=flat-square&color=E3B341&logo=github&logoColor=white&label=Stars">
   <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-3FB950?style=flat-square">
   <a href="https://www.npmjs.com/package/ai-employees"><img alt="npm ai-employees" src="https://img.shields.io/badge/npm-ai--employees-CB3837?style=flat-square&logo=npm&logoColor=white"></a>
   <img alt="Claude Code and twelve other agents" src="https://img.shields.io/badge/Claude_Code_+_12_agents-ready-D97757?style=flat-square&logo=anthropic&logoColor=white">
@@ -49,7 +48,7 @@ Based on <a href="https://github.com/markfulton/ai-employees">AI Employees by Ma
 
 An AI Employee is a folder of scheduled routines that covers one business role. It runs on your own machine, on the AI agent you already use, and briefs you every morning. They drive your browser and your PC the way you do, and every run makes the next one better. Eight roles, every routine and schedule in this repo, nothing held back.
 
-Created by [Mark Fulton](https://www.reinventing.ai/?utm_source=github&utm_medium=readme&utm_campaign=ai-employees) of Reinventing.AI, founder of [Vibe Coding is Life](https://facebook.com/groups/vibecodinglife) (340,000+ members). Running my own business every weekday since August 27, 2026.
+Created by Dadi Naveen https://github.com/dadinaveen1729/Ai-employees
 
 <p align="center">
   <img src="assets/employees/team.webp" width="960" alt="The eight AI Employees, each with its own identity and working tools">
@@ -85,13 +84,13 @@ You need an AI agent you are logged in to (Claude Code is what I use) and a brow
 This repository is also a Claude Code plugin with one skill, `hire`, and all eight kits bundled. In any Claude Code session:
 
 ```
-/plugin marketplace add markfulton/ai-employees
+/plugin marketplace add dadinaveen/ai-employees
 /plugin install ai-employees@ai-employees
 ```
 
 Then say "hire the GTM Engineer into D:\AgentOps\gtm-engineer", or run `/ai-employees:hire`. The skill checks the folder is outside cloud sync, copies the kit from the plugin with no download, runs the self tests, and tells you the one line to say in a fresh session in that folder. It registers nothing and sends nothing. [The plugin page](https://club.reinventing.ai/plugin?utm_source=github&utm_medium=readme&utm_campaign=ai-employees&utm_content=plugin) has the same steps with a walkthrough.
 
-**What the plugin runs.** The `hire` skill runs one command, `node installer/cli.mjs hire <employee> --to <folder>`, from the installer bundled in the plugin. It copies one kit from the plugin into the folder you choose, writes `.installed.json` there, runs every kit script with `--selftest` under Node, and runs `claude auth status` to see whether you are signed in. On that path it makes no network request, collects no data and sends no telemetry. The installer downloads a kit from `github.com/markfulton/ai-employees` only when it has no bundled copy, which never happens inside the plugin or the npm package, since both carry the kits. Used without the plugin, the skill asks before it fetches anything from npm or GitHub. It registers no schedule, sends nothing and never reads or enters a credential. A hired employee is a separate step that runs in its own folder, and [docs/GUARDRAILS.md](docs/GUARDRAILS.md) says what it may and may not do.
+**What the plugin runs.** The `hire` skill runs one command, `node installer/cli.mjs hire <employee> --to <folder>`, from the installer bundled in the plugin. It copies one kit from the plugin into the folder you choose, writes `.installed.json` there, runs every kit script with `--selftest` under Node, and runs `claude auth status` to see whether you are signed in. On that path it makes no network request, collects no data and sends no telemetry. The installer downloads a kit from `github.com/dadinaveen/ai-employees` only when it has no bundled copy, which never happens inside the plugin or the npm package, since both carry the kits. Used without the plugin, the skill asks before it fetches anything from npm or GitHub. It registers no schedule, sends nothing and never reads or enters a credential. A hired employee is a separate step that runs in its own folder, and [docs/GUARDRAILS.md](docs/GUARDRAILS.md) says what it may and may not do.
 
 **Not on Claude Code?** The same two steps work on OpenClaw, Hermes, OpenCode, Grok Bot, Codex, Antigravity, Pi, Cline, Qwen Code, DeepSeek, Muse and Dots. [docs/HARNESSES.md](docs/HARNESSES.md) has the command for each.
 
@@ -187,6 +186,6 @@ Routine requests, new employee proposals, harness reports and corrections from r
 
 ## License
 
-MIT. Copyright (c) 2026 Mark Fulton. [LICENSE](LICENSE). Names and logos are not licensed, and forks get their own name: [TRADEMARKS.md](TRADEMARKS.md).
+MIT. Copyright (c) 2026 Dadi Naveen. [LICENSE](LICENSE). Names and logos are not licensed, and forks get their own name: [TRADEMARKS.md](TRADEMARKS.md).
 
-Built by Mark Fulton with Claude Code. Every contributor is in [CREDITS.md](CREDITS.md). Report a way to make an employee send or spend through [SECURITY.md](SECURITY.md), not a public issue.
+Built by Dadi Naveen with Claude Code. Every contributor is in [CREDITS.md](CREDITS.md). Report a way to make an employee send or spend through [SECURITY.md](SECURITY.md), not a public issue.
